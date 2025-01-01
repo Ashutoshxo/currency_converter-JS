@@ -1,0 +1,115 @@
+/* General body styling */
+body {
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(to right, #ff7e5f, #feb47b); /* Gradient background */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    color: #fff;
+    box-sizing: border-box;
+  }
+  
+  /* Container for the converter */
+  .container {
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 40px 60px;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    width: 400px;
+    max-width: 100%;
+  }
+  
+  /* Heading styles */
+  h1 {
+    font-size: 2.5em;
+    color: #ff7e5f;
+    margin-bottom: 30px;
+    text-transform: uppercase;
+    font-weight: bold;
+    letter-spacing: 2px;
+    font-family: 'Arial', sans-serif;
+  }
+  
+  /* Styling the form section */
+  .converter {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  
+  /* Input and select fields styling */
+  input, select {
+    padding: 15px;
+    font-size: 1.2em;
+    border-radius: 10px;
+    border: 2px solid #ff7e5f;
+    background-color: #fff;
+    color: #333;
+    width: 100%;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  /* Focus effect on inputs and selects */
+  input:focus, select:focus {
+    border-color: #feb47b;
+    box-shadow: 0 0 8px rgba(255, 126, 95, 0.5);
+    outline: none;
+  }
+  
+  /* Styling the Convert button */
+  button {
+    padding: 15px 30px;
+    background-color: #ff7e5f;
+    color: #fff;
+    border: none;
+    border-radius: 10px;
+    font-size: 1.2em;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    width: 100%;
+  }
+  
+  /* Hover effect on the Convert button */
+  button:hover {
+    background-color: #feb47b;
+    transform: scale(1.05);
+  }
+  
+  /* Styling for the result section */
+  #result {
+    margin-top: 30px;
+    font-size: 1.5em;
+  }
+  
+  #convertedValue {
+    color: #ff7e5f;
+    font-weight: bold;
+    font-size: 2em;
+  }
+  
+  /* Styling the small text inside result */
+  h3 {
+    font-size: 1.2em;
+    margin-bottom: 10px;
+    color: #333;
+  }
+  
+  /* Responsive design for smaller screens */
+  @media screen and (max-width: 480px) {
+    .container {
+      padding: 20px;
+      width: 90%;
+    }
+  
+    h1 {
+      font-size: 2em;
+    }
+  
+    button {
+      font-size: 1em;
+    }
+  }
+  
